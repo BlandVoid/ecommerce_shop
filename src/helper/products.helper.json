@@ -1,0 +1,72 @@
+[
+  {
+    "product_id": "1",
+    "product_name": "RED Dragon 8K",
+    "product_desc": "RED advanced color science with incredible dynamic range. The result is cinema image quality that breathes life into your footage. Showcase the depths of shadows as well as highlight roll-off to capture otherwise imperceptible details.",
+    "product_image": "1",
+    "product_price": 14950.55
+  },
+  {
+    "product_id": "2",
+    "product_name": "GoPro HERO 9",
+    "product_desc": "20MP Photo with SuperPhoto - Capture crisp, pro-quality photos with 20MP clarity. And with SuperPhoto, HERO 9 Black can automatically pick all the best image processing for you.",
+    "product_image": "2",
+    "product_price": 399.99
+  },
+  {
+    "product_id": "3",
+    "product_name": "Oculus Rift S",
+    "product_desc": "Top VR gaming library: Blast, slash and soar your way through the top library in VR gaming. Oculus Rift S lets you play hundreds of games and exclusives already available in the Oculus store, with so much more to come.",
+    "product_image": "3",
+    "product_price": 380.99
+  },
+  {
+    "product_id": "4",
+    "product_name": "Apple iPad",
+    "product_desc": "iPad features an immersive, edge-to-edge Liquid Retina display.¹ The new pro cameras, Wide and new Ultra Wide, combined with the all-new LiDAR Scanner enable entirely new experiences in the next generation of augmented reality (AR) apps.",
+    "product_image": "4",
+    "product_price": 299.99
+  },
+  {
+    "product_id": "5",
+    "product_name": "Nvidia Shield",
+    "product_desc": "Nvidia Shield TV Pro is the ultimate streaming media player for the modern living room—packed with features to make even the most demanding users proud.",
+    "product_image": "5",
+    "product_price": 198.6
+  },
+  {
+    "product_id": "6",
+    "product_name": "Google Pixel Buds",
+    "product_desc": "Sensors in each bud detect your voice and eliminate background noise so you can take and make clear calls, and water resistance makes these in-ear headphones the ideal fitness buddy.",
+    "product_image": "6",
+    "product_price": 179.99
+  },
+  {
+    "product_id": "7",
+    "product_name": "Audio-Technica 2020",
+    "product_desc": "Audio-Technica’s stringent quality and consistency standards set the AT2020 apart from other mics in its class. Its low-mass diaphragm is custom-engineered for extended frequency response and superior transient response.",
+    "product_image": "7",
+    "product_price": 149.99
+  },
+  {
+    "product_id": "8",
+    "product_name": "Amazon Echo",
+    "product_desc": "Amazon Echo smart speaker lets you control smart home devices, adjust your schedule and check the news using voice commands.",
+    "product_image": "8",
+    "product_price": 99.99
+  },
+  {
+    "product_id": "9",
+    "product_name": "Edifier R1280T",
+    "product_desc": "The R1280T powered bookshelf speakers has combined a retro look with a modern sense of audio quality. Natural sound reproduction from 13mm silk dome tweeter and 4 inch full range unit.",
+    "product_image": "9",
+    "product_price": 99.99
+  },
+  {
+    "product_id": "10",
+    "product_name": "Logitech MX Master 2S",
+    "product_desc": "The ultimate precision mouse for power users. Harness the power of Logitech Flow and seamlessly move content between three computers. Scroll through documents and web pages faster and easier with the speed adaptive scroll wheel.",
+    "product_image": "10",
+    "product_price": 68.8
+  }
+]

@@ -1,0 +1,6 @@
+/client/node_modules
+node_modules
+.env
+/client/.env
+/.vscode
+Dockerfile
