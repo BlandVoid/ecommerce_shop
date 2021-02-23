@@ -1,6 +1,7 @@
 /client/node_modules
 node_modules
 .env
+.env.dev
 /client/.env
 /.vscode
 Dockerfile

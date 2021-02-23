@@ -3,15 +3,25 @@ import { Pool } from "pg"
 import { keys } from "./keys.config"
 
 export const pool = new Pool({
-  host: keys.PG_HOST,
-  database: keys.PG_DATABASE,
-  user: keys.PG_USER,
-  password: keys.PG_PASSWORD,
-  port: parseInt(keys.PG_PORT),
+  connectionString: keys.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
   },
 })
+
+// export const pool = new Pool({
+//   host: keys.PG_HOST,
+//   database: keys.PG_DATABASE,
+//   user: keys.PG_USER,
+//   password: keys.PG_PASSWORD,
+//   port: parseInt(keys.PG_PORT),
+//   ssl: {
+//     rejectUnauthorized: false,
+//   },
+// })
+
+//
+pool.on("connect", () => console.log("pg connected"))
 
 //show error on pg error
 pool.on("error", (err) => console.log(err.message))
