@@ -1,4 +1,4 @@
-import express, { Application } from "express"
+import express, { Application, Request, Response, NextFunction } from "express"
 import cors from "cors"
 import morgan from "morgan"
 import path from "path"
@@ -37,8 +37,17 @@ app.use("/api/v1/order", orderRoutes)
 const imageDir = path.join(__dirname, "assets/images")
 app.use("/uploads", express.static(imageDir))
 
+// server static assets --> if in prod
+if (process.env.NODE_ENV === "production") {
+  //set static folder
+  app.use(express.static("client/build"))
+  //
+  app.get("*", (req: Request, res: Response, next: NextFunction) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  })
+}
 //error handler
-app.use(notFound)
+app.use("/api/v1/*", notFound)
 app.use(errorHandler)
 
 //serve port
