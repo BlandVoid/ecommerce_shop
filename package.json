@@ -48,5 +48,8 @@
   "keywords": [],
   "author": "Bland Ocean",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "14.x"
+  }
 }
