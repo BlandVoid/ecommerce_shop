@@ -8,6 +8,9 @@ export const pool = new Pool({
   user: keys.PG_USER,
   password: keys.PG_PASSWORD,
   port: parseInt(keys.PG_PORT),
+  ssl: {
+    rejectUnauthorized: false,
+  },
 })
 
 //show error on pg error
