@@ -22,6 +22,8 @@ You can visit the production app at [ecom-techshop.herokuapp.com](https://ecom-t
   - A Predictable State Container for JS Apps
 - [Chakra UI](https://chakra-ui.com/)
   - Build accessible React apps with speed
+- [Stripe](https://stripe.com/)
+  - Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.
 
 ## Initial Setup
 
