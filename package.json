@@ -42,6 +42,7 @@
   },
   "scripts": {
     "start": "node dist/server.js",
+    "client:install": "cd client && npm install",
     "server:dev": "nodemon src/server.ts",
     "client:dev": "cd client && npm start",
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
