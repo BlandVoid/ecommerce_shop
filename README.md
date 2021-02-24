@@ -2,9 +2,28 @@
 
 TechShop is an online shop for selling technology products. You can buy various types of products on techshop.
 
-## Initial Setup
-
 You can visit the production app at [ecom-techshop.herokuapp.com](https://ecom-techshop.herokuapp.com/)
+
+## Built WIth
+
+- [TypeScript](https://www.typescriptlang.org/)
+  - TypeScript extends JavaScript by adding types.
+  - By understanding JavaScript, TypeScript saves you time catching errors and providing fixes before you run code.
+  - Any browser, any OS, anywhere JavaScript runs. Entirely Open Source.
+- [Nodejs](https://nodejs.org/)
+  - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [Reactjs](https://reactjs.org/)
+  - A JavaScript library for building user interfaces
+- [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL: The World's Most Advanced Open Source Relational Database
+- [Express](https://expressjs.com/)
+  - Fast, unopinionated, minimalist web framework for Node.js
+- [Redux](https://redux.js.org/)
+  - A Predictable State Container for JS Apps
+- [Chakra UI](https://chakra-ui.com/)
+  - Build accessible React apps with speed
+
+## Initial Setup
 
 ### Installation
 
@@ -71,22 +90,3 @@ $ npm run dev
 ```
 
 Once you've started the development server, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Built WIth
-
-- [TypeScript](https://www.typescriptlang.org/)
-  - TypeScript extends JavaScript by adding types.
-  - By understanding JavaScript, TypeScript saves you time catching errors and providing fixes before you run code.
-  - Any browser, any OS, anywhere JavaScript runs. Entirely Open Source.
-- [Nodejs](https://nodejs.org/)
-  - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [Reactjs](https://reactjs.org/)
-  - A JavaScript library for building user interfaces
-- [PostgreSQL](https://www.postgresql.org/)
-  - PostgreSQL: The World's Most Advanced Open Source Relational Database
-- [Express](https://expressjs.com/)
-  - Fast, unopinionated, minimalist web framework for Node.js
-- [Redux](https://redux.js.org/)
-  - A Predictable State Container for JS Apps
-- [Chakra UI](https://chakra-ui.com/)
-  - Build accessible React apps with speed
