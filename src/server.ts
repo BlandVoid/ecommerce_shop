@@ -33,12 +33,8 @@ app.use("/api/v1/auth", authRoutes)
 app.use("/api/v1/product", productRoutes)
 app.use("/api/v1/order", orderRoutes)
 
-//error handler
-// app.use("/api/v1/*", notFound)
-app.use("/api/v1/*", errorHandler)
-
 //images directory
-const imageDir = path.join(__dirname, "assets/images")
+const imageDir = path.join(__dirname, "..", "assets")
 app.use("/uploads", express.static(imageDir))
 
 // server static assets --> if in prod
@@ -47,10 +43,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"))
   //
   app.get("*", (req: Request, res: Response, next: NextFunction) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+    res.sendFile(path.resolve(__dirname, "..", "client", "build", "index.html"))
   })
 }
 
+//error handler
+app.use(errorHandler)
+
 //serve port
 const _PORT = process.env.PORT ?? 5000
-app.listen({ port: _PORT }, () => console.log(`Listening to port ${_PORT}`))
+app.listen({ port: _PORT }, () =>
+  console.log(`Listening to port ${_PORT} on env ${process.env.NODE_ENV}`)
+)

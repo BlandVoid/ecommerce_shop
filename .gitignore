@@ -5,3 +5,5 @@ node_modules
 /client/.env
 /.vscode
 Dockerfile
+/dist
+/client/build

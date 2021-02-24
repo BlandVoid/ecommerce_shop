@@ -42,7 +42,8 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && tsc -p ."
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && tsc -p .",
+    "build": "tsc -p ."
   },
   "keywords": [],
   "author": "Bland Ocean",
