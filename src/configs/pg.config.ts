@@ -2,23 +2,23 @@ import { Pool } from "pg"
 
 import { keys } from "./keys.config"
 
-export const pool = new Pool({
-  connectionString: keys.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false,
-  },
-})
+const pgConfig =
+  keys.NODE_ENV === "production"
+    ? {
+        connectionString: keys.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      }
+    : {
+        host: keys.PG_HOST,
+        database: keys.PG_DATABASE,
+        user: keys.PG_USER,
+        password: keys.PG_PASSWORD,
+        port: parseInt(keys.PG_PORT),
+      }
 
-// export const pool = new Pool({
-//   host: keys.PG_HOST,
-//   database: keys.PG_DATABASE,
-//   user: keys.PG_USER,
-//   password: keys.PG_PASSWORD,
-//   port: parseInt(keys.PG_PORT),
-//   ssl: {
-//     rejectUnauthorized: false,
-//   },
-// })
+export const pool = new Pool(pgConfig)
 
 //
 pool.on("connect", () => console.log("pg connected"))
