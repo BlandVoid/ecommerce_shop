@@ -120,8 +120,8 @@ export const payOrderController = async (
   const {
     rows,
   } = await pool.query(
-    `SELECT orders.order_amount FROM orders WHERE orders.order_id = $1 AND orders.paid = FALSE LIMIT 1;`,
-    [order_id]
+    `SELECT orders.order_amount FROM orders WHERE orders.order_id = $1 AND orders.paid = FALSE AND orders.author_id = $2 LIMIT 1;`,
+    [order_id, req.session.user_id]
   )
   const order = rows[0]
   if (_.isEmpty(order))
