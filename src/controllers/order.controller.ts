@@ -71,8 +71,8 @@ export const orderDetailController = async (
   const {
     rows,
   } = await pool.query(
-    `SELECT orders.address, orders.city, orders.country, orders.zip, orders.order_amount, orders.paid, orders.order_products FROM orders WHERE orders.order_id = $1 LIMIT 1;`,
-    [order_id]
+    `SELECT orders.address, orders.city, orders.country, orders.zip, orders.order_amount, orders.paid, orders.order_products FROM orders WHERE orders.order_id = $1 AND orders.author_id = $2 LIMIT 1;`,
+    [order_id, req.session.user_id]
   )
   const order = rows[0]
   if (_.isEmpty(order) || order.paid)
